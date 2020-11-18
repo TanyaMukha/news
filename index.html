@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link rel="stylesheet" href="css/news.css">
+</head>
+<body>
+    <div class="news">
+        <h1 class="news-title" id="news-title">Новини</h1>
+        <div class="news-container" id="news-container">          
+        </div>
+    </div>
+    <div class="add-news">        
+        <form action="" class="add-news-form" id="add-news-form">
+            <h2 class="add-news-form-title">Додати новину</h2>
+            <div class="add-news-form-container">
+
+                <label for="add-news-title" class="add-news-input-label">Заголовок</label>
+                <input type="text" required class="add-news-form-input" id="add-news-title">
+
+                <label for="add-news-url" class="add-news-input-label">Посилання</label>
+                <input type="url" required class="add-news-form-input" placeholder="http://" id="add-news-url">
+
+                <label for="add-news-img" class="add-news-input-label">Зображення</label>
+                <input type="url" required class="add-news-form-input" placeholder="http://" id="add-news-img">
+
+                <label for="add-news-desc" class="add-news-input-label">Короткий зміст</label>
+                <textarea type="text" required class="add-news-form-input" id="add-news-desc" rows="3"></textarea>
+
+                <label for="add-news-author" class="add-news-input-label">Автор</label>
+                <input type="text" class="add-news-form-input" id="add-news-author">
+
+            </div>
+            <input type="submit" class="add-news-form-submit" value="Опублікувати" id="add-news-btn">
+        </form>
+    </div>
+    <footer class="links">
+        <a href="#news-title">На початок &#9650;</a> 
+    </footer>
+    
+    <script src="js/post-news.js"></script>
+</body>
+</html>

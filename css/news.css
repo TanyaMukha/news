@@ -1,0 +1,160 @@
+.news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.news-title {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 50px;
+    text-align: center;
+    color: #003049;
+}
+
+.news-item {
+    width: 270px;    
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+.news-item-img {
+    width: 100%;
+    height: auto;
+}
+
+.news-item-url:link, .news-item-url:visited {
+    text-decoration: none;
+    cursor: pointer;
+    color: #003049;
+}
+
+.news-item-url:hover {
+    color: #f77f00;
+}
+
+.news-item-desc {
+    font-size: 1em;
+}
+
+.news-item-date,
+.news-item-author,
+.news-item-src {
+    margin: 0;
+    color: #4c5760;
+    font-size: 0.9em;
+}
+
+.news-item-author:before {
+    content: "Автор: ";
+}
+
+.news-item-src:before {
+    content: "Джерело: ";
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.links a:link, .links a:visited {
+    text-decoration: none;
+    color: #003049;
+}
+
+.links a:hover {
+    color: #f77f00;
+}
+
+/* ----------------------------------------------------------------- */
+
+.add-news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    padding: 10px;    
+}
+
+.add-news-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 100%;
+    max-width: 540px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #4c5760;
+    border-radius: 10px;
+}
+
+.add-news-form-title {
+    margin-top: 0;
+    color: #003049;
+}
+
+.add-news-form-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+    width: 100%;
+}
+
+.add-news-input-label {
+    display: inline-block;
+    text-align: left;
+    white-space: nowrap;
+}    
+
+.add-news-form-submit {
+    margin-top: 20px;
+    padding: 10px;
+    font-weight: bold;
+    background-color: #003049;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.add-news-form-submit:hover {
+    background-color: #f77f00;
+    color: black;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+@media only screen and (min-width: 640px) {
+
+    .add-news-form {
+        width: 540px;
+    }
+
+    .add-news-form-container {
+        grid-template-columns: min-content 1fr;
+        grid-gap: 5px;
+        width: 100%;
+    }
+
+    .add-news-form {
+        padding: 40px;
+        box-sizing: border-box;
+    }
+
+    .add-news-input-label {
+        text-align: right;
+    }
+
+}
