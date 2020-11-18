@@ -17,13 +17,12 @@ const addNewsForm = document.querySelector('#add-news-form');
 addNewsForm.addEventListener('submit', function(event) {
     
     event.preventDefault();
-    const today = new Date();
 
     let newsTitle = document.querySelector('#add-news-title');
     let newsUrl = document.querySelector('#add-news-url');
     let newsImg = document.querySelector('#add-news-img');
     let newsDesc = document.querySelector('#add-news-desc');
-    let newsPublishedAt = today.toISOString();
+    let newsPublishedAt = document.querySelector('#add-news-dt');
     let newsAuthor = document.querySelector('#add-news-author');
     
     const newsObj = {
@@ -31,7 +30,7 @@ addNewsForm.addEventListener('submit', function(event) {
         url: newsUrl.value,
         urlToImage: newsImg.value,
         description: newsDesc.value,
-        publishedAt: newsPublishedAt,
+        publishedAt: newsPublishedAt.value,
         author: newsAuthor.value
     }
 
