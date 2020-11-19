@@ -23,11 +23,19 @@
     width: 270px;    
     margin: 20px;
     box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
 }
 
 .news-item-img {
-    width: 100%;
-    height: auto;
+    width: 270px;
+    height: calc(270px / 4 * 3);
+    position: absolute;
+    object-fit: cover;
+}
+
+.news-item-title {
+    margin-top: calc(270px / 4 * 3 + 20px);
 }
 
 .news-item-url:link, .news-item-url:visited {
